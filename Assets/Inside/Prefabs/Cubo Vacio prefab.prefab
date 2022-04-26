@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7755534435531629891}
   - component: {fileID: 2803046187869246310}
   m_Layer: 0
-  m_Name: Cubo prefab
+  m_Name: Cubo Vacio prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
