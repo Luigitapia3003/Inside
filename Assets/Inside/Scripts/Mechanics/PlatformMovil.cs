@@ -21,10 +21,15 @@ public class PlatformMovil : MonoBehaviour
 
     void MovePlatform()
     {
-        PlatformRB.MovePosition(Vector3.MoveTowards(PlatformRB.position, PlatformPositions[NextPosition].position, PlatformSpeed * Time.deltaTime));
+        if (MoveToTheNext)
+        {
+            StopCoroutine(WaitForMove(0));
+            PlatformRB.MovePosition(Vector3.MoveTowards(PlatformRB.position, PlatformPositions[NextPosition].position, PlatformSpeed * Time.deltaTime));
+        }      
 
         if (Vector3.Distance(PlatformRB.position, PlatformPositions[NextPosition].position) <= 0)
         {
+            StartCoroutine(WaitForMove(WaitTime));
             ActualPosition = NextPosition;
             NextPosition++;
 
@@ -33,5 +38,12 @@ public class PlatformMovil : MonoBehaviour
                 NextPosition = 0;
             }
         }
+    }
+
+    IEnumerator WaitForMove(float time)
+    {
+        MoveToTheNext = false;
+        yield return new WaitForSeconds(time);
+        MoveToTheNext = true;
     }
 }
