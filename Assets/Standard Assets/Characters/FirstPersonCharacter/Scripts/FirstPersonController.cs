@@ -243,6 +243,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
+            switch (hit.gameObject.tag)
+            {
+                case "JumpPad":
+                    m_Jump = true;
+                    m_JumpSpeed = 20f;
+                    break;
+
+            }
             Rigidbody body = hit.collider.attachedRigidbody;
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below)
@@ -255,6 +263,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+
+            
         }
     }
 }
