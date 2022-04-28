@@ -249,8 +249,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     m_Jump = true;
                     m_JumpSpeed = 20f;
                     break;
-
             }
+
+            if (m_CharacterController.isGrounded)
+            {
+                m_Jump = false;
+                m_JumpSpeed = 12f;
+            }
+            
             Rigidbody body = hit.collider.attachedRigidbody;
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below)
