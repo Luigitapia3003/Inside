@@ -29,7 +29,6 @@ public class FrozenCube : Interactable
 
     private void Release()
     {
-
         transform.SetParent(null);
         isGrabed = false;
     }
