@@ -12,7 +12,6 @@ public class Manipulable : Interactable
         base.Start();
         rb = GetComponent<Rigidbody>();
     }
-
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.E) && isGrabed)
