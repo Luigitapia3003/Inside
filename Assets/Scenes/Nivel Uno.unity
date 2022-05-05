@@ -8063,7 +8063,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-303540
+  m_Name: pb_Mesh-365714
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -63418,7 +63418,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-303698
+  m_Name: pb_Mesh-365870
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -93355,6 +93355,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 196400101}
     - target: {fileID: 274778015117329358, guid: 1f34d2944dc878a4d8510878a1733448, type: 3}
+      propertyPath: ID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 274778015117329358, guid: 1f34d2944dc878a4d8510878a1733448, type: 3}
       propertyPath: index
       value: 1
       objectReference: {fileID: 0}
@@ -93539,6 +93543,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2481064233629538840, guid: 6fad2bdbbd168d641ad40d3cbaa056b0, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 3efa97e425b81494e8ff88a459c32cb2, type: 2}
+    - target: {fileID: 2481064233629538840, guid: 6fad2bdbbd168d641ad40d3cbaa056b0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2744885707618929230, guid: 3efa97e425b81494e8ff88a459c32cb2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fad2bdbbd168d641ad40d3cbaa056b0, type: 3}
 --- !u!1001 &4912810332583861532
@@ -93912,6 +93924,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2015884376}
     m_Modifications:
+    - target: {fileID: 8986311821197414537, guid: cb768940016ce6a4aac9c4f83df0deb8, type: 3}
+      propertyPath: ID
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8986311821197414539, guid: cb768940016ce6a4aac9c4f83df0deb8, type: 3}
       propertyPath: m_RootOrder
       value: 1
