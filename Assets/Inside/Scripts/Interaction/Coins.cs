@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coins : MonoBehaviour
 {
+   
     private void OnTriggerEnter(Collider other)
     {
         PlayerInvenCoins playerInvenCoins = other.GetComponent<PlayerInvenCoins>();
@@ -12,6 +13,7 @@ public class Coins : MonoBehaviour
         {
             playerInvenCoins.CoinsCollected();
             gameObject.SetActive(false);
+            
         }
     }
 }
