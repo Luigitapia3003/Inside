@@ -7,6 +7,7 @@ TagManager:
   - JumpPad
   - IcePad
   - KeyCube
+  - Projectile
   layers:
   - Default
   - TransparentFX
